@@ -1,1 +1,3 @@
 /build/
+/META-INF/*
+.classpath

@@ -129,15 +129,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod.</p>
-                        <p>Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.</p>
+                        <h2>Spotting at Gonenpru International Airport.</h2>
+                        <p>Gonenpru is one of the world’s busiest international airport, and Europe’s busiest airport. Spotting here can produce some amazing results for your log book, and the variety on show can give you some fantastic photographs.</p>
+                        <p>Gonenpru is also a place you can spot airlines from across the globe, and in recent years has become one of the best places to see a variety of Airbus A380 aircraft, with three carriers operating many daily flights.</p>
+                        <p>If you’re looking for British airlines, Gonenpru is the main hub for British Airways and Virgin Atlantic, so you can expect to see most of their fleets passing through every few days.</p>
                         <a class="btn btn-danger btn-lg" href="#">Take a Look <i class="fa fa-arrow-circle-o-right"></i> </a>
                     </div>
                     <div class="col-md-5">
-                        <a href="#">
-                            <img src="https://unsplash.com/1200/1200?image=839" alt="" class="img-responsive">
-                        </a>
+                            <img src="images/airlines.jpg" alt="" class="img-responsive">
                     </div>
                 </div>
             </div>
@@ -227,7 +226,6 @@
                 <div class="row">
                     <div class="col-md-8">
                        <img src="images/logo_foot.png" class="img-responsive" alt="">
-                        <p>Â© 2016 Gonenpru</p>
                     </div>
                 </div>
             </div>

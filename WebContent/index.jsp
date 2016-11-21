@@ -41,13 +41,12 @@
       <nav class="pushy pushy-left">
         <ul class="list-unstyled">
             <li><a href="#home">Home</a></li>
-            <li><a href="#feat">Features</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#news">My Blog</a></li>
-            <li><a href="#history">My History</a></li>
-            <li><a href="#photos">Look my Photos</a></li>
-            <li><a href="#contact">Get in Touch!</a></li>
-            <li><a href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/" target="_blank">Download</a></li>
+            <li><a href="#feat">Facilities</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#news">Blog</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -105,19 +104,19 @@
                         <div class="col-md-6 opaline col-md-offset-6">
                             <div class="row">
                                 <div class="col-md-offset-1 col-md-10">
-                                    <h3>Ligula Mattis Ornare Ultricies</h3>
-                                    <h5>Pellentesque Cursus Amet Parturient Etiam</h5>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <h3>About Gonenpru Airport</h3>
+                                    <h5>Best International Airport in the World</h5>
+                                    <p>Passengers of all the world trust us for bussines, vacations and much more due to our service.</p>
                                 </div>
                             </div>
                             <div class="row text-center">
                                 <!-- set the numbers in assets/js/scripts.js  -->
                                 <div class="col-md-4 boxes col-xs-6 col-xs-offset-3 col-lg-4 col-lg-offset-1 col-md-offset-1 col-sm-6 wow fadeInUp">
-                                    <h5>Ultricies</h5>
+                                    <h5>Travelers</h5>
                                     <h3 class="odometer 01">00000</h3>
                                 </div>
                                 <div class="col-md-4 boxes col-xs-6 col-xs-offset-3 col-lg-4 col-lg-offset-2 col-md-offset-2 col-sm-6 wow fadeInUp" data-wow-delay="100ms">
-                                    <h5>Fermentum</h5>
+                                    <h5>Flights</h5>
                                     <h3 class="odometer 02">00000</h3>
                                 </div>
                             </div>

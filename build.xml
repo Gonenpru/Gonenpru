@@ -82,6 +82,9 @@
         <antcall target="build"/>
     </target>
     <target name="test">
-          	 <echo message="Compiling source code"/>
+       <echo message="Compiling source code"/>
+    </target>
+    <target name="deps">
+       <echo message="What ? "/>
     </target>
 </project>

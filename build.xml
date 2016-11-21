@@ -85,6 +85,6 @@
        <echo message="Compiling source code"/>
     </target>
     <target name="deps">
-       <echo message="What ? "/>
+       <echo message="Dependencies"/>
     </target>
 </project>

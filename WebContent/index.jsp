@@ -47,6 +47,7 @@
             <li><a href="#history">History</a></li>
             <li><a href="#photos">Photos</a></li>
             <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#contact">Member Access</a></li>
         </ul>
       </nav>
 
@@ -70,8 +71,9 @@
                     <div class="jumbotron">
                         <h1><small>Welcome to</small></br>
 						<strong>Gonenpru Airport</strong></h1>
-                        <p><a class="btn btn-primary btn-lg" role="button">Login</a> 
-                        <a target="_blank" href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/" class="btn btn-lg btn-danger" role="button">Register</a></p>
+                        <p><a class="btn btn-danger btn-lg" role="button">Flight Info</a> 
+                        <a href="#" class="btn btn-primary btn-lg" role="button">Airlines</a>
+                        <a class="btn btn-primary btn-lg" role="button">Timetables</a> </p>
                         
                     </div>
                 </div>
@@ -151,11 +153,11 @@
                         <div class="col-md-6 opaline">
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1">
-                                    <p class="lead"><i>Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</i></p>
-                                    <p><i>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</i></p>
-                                    <h6 class="lead"> â Fermentum Dapibus</h6>
-                                    <p><small>Nibh Etiam Risus Bibendum<br>
-        Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
+                                    <p class="lead"><i>Where to Spot at Gonenpru.</i></p>
+                                    <p><i>The only official viewing area at Gonenpru is inside Terminal 4, and only for passengers who have passed through security. Spotters instead have to make do with a number of popular locations around the perimeter depending on traffic patterns.</i></p>
+                                    <h6 class="lead">Myrtle Avenue</h6>
+                                    <h6 class="lead">Stanwell Moor Road (A3044)</h6>
+                                    <h6 class="lead">Aviation Academy</h6>
                                 </div>
                             </div>
                         </div>
@@ -203,21 +205,25 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="prefooter wow fadeInUp" data-wow-delay="100ms">
+<section id="contact" class="prefooter wow fadeInUp" data-wow-delay="100ms">
             <!-- change the image in style.css to the class .prefooter .container-fluid [approximately row 154] -->
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8">
                             <h3>Contact Us</h3>
-                            <p>Info@FlyGonenpru.com</p>
-                            <p>Gonenpru International Airport <br>
-  								8500 Pena Blvd.<br>
-								Denver, CO 80249-6340<br>
-								Open 24 hours a day, seven days a week<br>
-								Questions<br>
-								Chat, text or call us from 6:30 a.m. to 10:30 p.m. daily.</p>
-                        
+                           	<p>Info@FlyGonenpru.com</p>
+                           	<p>Gonenpru International Airport <br> 8500 Pena Blvd.<br>Denver, CO 80249-6340
+ 							</p>
+ 							<br>
+ 							<h4>Subscribe To Our Newsletter</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Email Here...">
+                                    <br>
+                                    <button type="button" class="btn btn-danger">Submit Newsletter</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

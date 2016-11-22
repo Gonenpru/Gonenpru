@@ -77,9 +77,12 @@
                           <div class="menu-btn"><span class="hamburger">&#9776;</span></div>
                         </div>
                     </div>
-                    <div class="embed-container">
-                    	<iframe src="loginform.jsp" width="500" height="800" frameBorder="0"></iframe>
+                    <div class="jumbotron">
+                                        <div class="embed-container">
+                    	<iframe src="loginform.jsp" width="500" height="800" scrolling="no" frameBorder="0" allowfullscreen></iframe>
                     	</div>
+                                        </div>
+                    
                 </div>
             </div>
         </header>

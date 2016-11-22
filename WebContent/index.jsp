@@ -70,7 +70,9 @@
                     <div class="jumbotron">
                         <h1><small>Welcome to</small></br>
 						<strong>Gonenpru Airport</strong></h1>
-                        <p><a class="btn btn-primary btn-lg" role="button">Flights</a> <a target="_blank" href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/" class="btn btn-lg btn-danger" role="button">Airlines</a></p>
+                        <p><a class="btn btn-primary btn-lg" role="button">Login</a> 
+                        <a target="_blank" href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/" class="btn btn-lg btn-danger" role="button">Register</a></p>
+                        
                     </div>
                 </div>
             </div>
@@ -207,15 +209,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8">
-                            <h3>Maecenas sed diam eget risus varius<br> blandit sit amet non magna.</h3>
-                            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Email Here...">
-                                    <br>
-                                    <button type="button" class="btn btn-danger">Submit Newsletter</button>
-                                </div>
-                            </div>
+                            <h3>Contact Us</h3>
+                            <p>Info@FlyGonenpru.com</p>
+                            <p>Gonenpru International Airport <br>
+  								8500 Pena Blvd.<br>
+								Denver, CO 80249-6340<br>
+								Open 24 hours a day, seven days a week<br>
+								Questions<br>
+								Chat, text or call us from 6:30 a.m. to 10:30 p.m. daily.</p>
+                        
                         </div>
                     </div>
                 </div>

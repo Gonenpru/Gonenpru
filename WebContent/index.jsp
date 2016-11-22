@@ -71,9 +71,11 @@
                     <div class="jumbotron">
                         <h1><small>Welcome to</small></br>
 						<strong>Gonenpru Airport</strong></h1>
-                        <p><a href="flightinfo.jsp" class="btn btn-danger btn-lg" role="button">Flight Info</a> 
+                        <p>
+                        <a href="flightinfo.jsp" class="btn btn-danger btn-lg" role="button">Flight Info</a> 
                         <a href="#" class="btn btn-primary btn-lg" role="button">Airlines</a>
-                        <a class="btn btn-primary btn-lg" role="button">Timetables</a> </p>
+                        <a href="#" class="btn btn-primary btn-lg" role="button">Timetables</a> 
+                        </p>
                         
                     </div>
                 </div>

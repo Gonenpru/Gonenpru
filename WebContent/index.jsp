@@ -40,14 +40,14 @@
       <!-- Pushy Menu -->
       <nav class="pushy pushy-left">
         <ul class="list-unstyled">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#feat">Facilities</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#news">Blog</a></li>
-            <li><a href="#history">History</a></li>
-            <li><a href="#photos">Photos</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#contact">Member Access</a></li>
+            <li><a href="index.jsp#home">Home</a></li>
+            <li><a href="index.jsp#feat">Facilities</a></li>
+            <li><a href="index.jsp#about">About Us</a></li>
+            <li><a href="index.jsp#news">Blog</a></li>
+            <li><a href="index.jsp#history">History</a></li>
+            <li><a href="index.jsp#photos">Photos</a></li>
+            <li><a href="index.jsp#contact">Contact Us</a></li>
+            <li><a href="login.jsp">Member Access</a></li>
         </ul>
       </nav>
 
@@ -60,7 +60,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-xs-10">
-                            <a href="#" class="thumbnail logo">
+                            <a href="index.jsp" class="thumbnail logo">
                                 <img src="images/logo.png" alt="" class="img-responsive">
                             </a>
                         </div>
@@ -71,7 +71,7 @@
                     <div class="jumbotron">
                         <h1><small>Welcome to</small></br>
 						<strong>Gonenpru Airport</strong></h1>
-                        <p><a class="btn btn-danger btn-lg" role="button">Flight Info</a> 
+                        <p><a href="flightinfo.jsp" class="btn btn-danger btn-lg" role="button">Flight Info</a> 
                         <a href="#" class="btn btn-primary btn-lg" role="button">Airlines</a>
                         <a class="btn btn-primary btn-lg" role="button">Timetables</a> </p>
                         

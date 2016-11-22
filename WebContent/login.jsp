@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Flight Information - Gonenpru International Airport</title>
+        <title>Member Login - Gonenpru International Airport</title>
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/theme.css" rel="stylesheet">
         <!-- Custom styles for this template -->
@@ -62,8 +62,9 @@
                     </div>
                     <div class="jumbotron">
                         <form>
-                         <h2>View Your Flight Information</h2>
-                        <p><label>Fligth Number: <input type="text" style="color: black;"></label></p>
+                         <h2>Log In</h2>
+                        <p><label>E-Mail: <input type="text" style="color: black;"></label></p>
+                         <p><label>Password: <input type="password" style="color: black;"></label></p>
                         </form>
                         
                     </div>

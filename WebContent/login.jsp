@@ -27,7 +27,24 @@
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
-    </head>
+<style type="text/css">
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+
+.embed-container iframe {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
+</head>
     <body class="">
       <!-- Pushy Menu -->
       <nav class="pushy pushy-left">
@@ -60,14 +77,9 @@
                           <div class="menu-btn"><span class="hamburger">&#9776;</span></div>
                         </div>
                     </div>
-                    <div class="jumbotron">
-                        <form>
-                         <h2>Log In</h2>
-                        <p><label>E-Mail: <input type="text" style="color: black;"></label></p>
-                         <p><label>Password: <input type="password" style="color: black;"></label></p>
-                        </form>
-                        
-                    </div>
+                    <div class="embed-container">
+                    	<iframe src="loginform.jsp" width="500" height="800" frameBorder="0"></iframe>
+                    	</div>
                 </div>
             </div>
         </header>

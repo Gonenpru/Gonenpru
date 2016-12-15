@@ -11,8 +11,7 @@ public class Prueba {
 	public String reverseHW (boolean reverse){
 		String str;
 		
-		if (reverse) 
-			str = "!dlrow olleH";
+		if (reverse) str = "!dlrow olleH";
 		else 
 			str = "Hello world!";
 		

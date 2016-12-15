@@ -27,6 +27,8 @@ pageEncoding="UTF-8"%>
 <link rel="stylesheet" href="assets/css/animate.css">
 <link rel="stylesheet" href="assets/css/magnific-popup.css">
 <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+<link rel="stylesheet" href="assets/css/timetable.css" />
+<script src="assets/js/timetable.js"></script>
 </head>
 <body class="">
 	<!-- Pushy Menu -->
@@ -61,15 +63,14 @@ pageEncoding="UTF-8"%>
 					</div>
 				</div>
 				<div class="jumbotron">
-					<form>
-						<h5>View Your Flight Information</h5>
-						<p><label>Fligth Number: <input type="text" style="color: black;"></label></p>
-					</form>
-					
-					<div style="background: white;">
-					s
-					</div>
-					
+						<h5>Hour - Code - To - Gate - Remarks</h5>
+						<div id="timetable"></div>
+						<script>
+		
+			var board = new DepartureBoard (document.getElementById ('timetable'), { rowCount: 10, letterCount: 19 }); 
+			board.setValue (['19:30 A001 LND 1 AR', '19:40 C001 MIA 3 AR', '19:50 B301 LND 3 DE','20:00 S041 LND 5 AR']);
+			
+		</script>
 				</div>
 			</div>
 		</div>

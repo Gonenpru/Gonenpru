@@ -65,16 +65,15 @@
                             </a>
                         </div>
                         <div class="col-md-1 col-md-offset-8 col-xs-2 text-center">
-                          <div class="menu-btn"><span class="hamburger">&#9776;</span></div>
+                          <div class="menu-btn"><span class="hamburger" style="color: white;">&#9776;</span></div>
                         </div>
                     </div>
                     <div class="jumbotron">
                         <h1><small>Welcome to</small></br>
 						<strong>Gonenpru Airport</strong></h1>
                         <p>
-                        <a href="flightinfo.jsp" class="btn btn-danger btn-lg" role="button">Flight Info</a> 
-                        <a href="#" class="btn btn-primary btn-lg" role="button">Airlines</a>
-                        <a href="#" class="btn btn-primary btn-lg" role="button">Timetables</a> 
+                        <a href="flightinfo.jsp" class="btn btn-danger btn-lg" role="button">Flight Info</a>
+                        <a href="timetable.jsp" class="btn btn-primary btn-lg" role="button">Timetables</a> 
                         </p>
                         
                     </div>

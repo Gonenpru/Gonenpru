@@ -36,7 +36,7 @@
 <link rel="stylesheet" href="assets/css/timetable.css" />
 <script src="assets/js/timetable.js"></script>
 </head>
-<body class="">
+<body style="">
 	<!-- Pushy Menu -->
 	<nav class="pushy pushy-left">
 		<ul class="list-unstyled">
@@ -55,7 +55,7 @@
 	<div class="site-overlay"></div>
 
 	<header id="home">
-		<div class="container-fluid">
+		
 			<!-- change the image in style.css to the class header .container-fluid [approximately row 50] -->
 			<div class="container">
 				<div class="row">
@@ -70,10 +70,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="jumbotron">
-					<div class="table-title">
-						<h3>TIMETABLE</h3>
-					</div>
+			</div>
+		
+	</header>
+				
 					<table class="table-fill">
 						<thead>
 							<tr>
@@ -107,6 +107,27 @@
 								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')">More Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
+								<td class="text-center">14:20</td>
+								<td class="text-center">LX780</td>
+								<td class="text-left" style="width:200px">Zurich</td>
+								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')">More Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+							</tr>
+							<tr>
+								<td class="text-center">14:20</td>
+								<td class="text-center">LX780</td>
+								<td class="text-left" style="width:200px">Zurich</td>
+								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')">More Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+							</tr>
+							<tr>
+								<td class="text-center">14:20</td>
+								<td class="text-center">LX780</td>
+								<td class="text-left" style="width:200px">Zurich</td>
+								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')">More Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+							</tr>
+							<tr>
 								<td class="text-center">14:50</td>
 								<td class="text-center">SN3722</td>
 								<td class="text-left" style="width:200px">Madrid</td>
@@ -122,10 +143,6 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
-			</div>
-		</div>
-	</header>
 	<!-- Bootstrap core JavaScript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->

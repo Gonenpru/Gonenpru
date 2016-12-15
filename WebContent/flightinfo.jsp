@@ -74,15 +74,7 @@ pageEncoding="UTF-8"%>
 			</div>
 		</div>
 	</header>
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<img src="images/logo_foot.png" class="img-responsive" alt="">
-				</div>
-			</div>
-		</div>
-	</footer>
+
 <!-- Bootstrap core JavaScript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->

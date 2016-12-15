@@ -1,0 +1,5 @@
+projectKey=Gonenpru
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/Gonenpru
+ceTaskId=AViVS2aFZuxTtRGRQpk3
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AViVS2aFZuxTtRGRQpk3

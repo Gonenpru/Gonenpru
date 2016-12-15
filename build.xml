@@ -3,7 +3,8 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Airport-Management">
+              as the first entry and export the buildfile again. -->
+<project xmlns:ivy="antlib:org.apache.ivy.ant" basedir="." default="build" name="Airport-Management">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../../../../../../../private/var/folders/v9/mlkchf7n567gn49pjpk5h5jh0000gn/T/AppTranslocation/56D67776-A764-4C07-8640-29034D904CF0/d/Eclipse.app/Contents/Eclipse/"/>
     <property name="debuglevel" value="source,lines,vars"/>
@@ -87,4 +88,40 @@
     <target name="deps">
        <echo message="Dependencies"/>
     </target>
+	<!-- ivy start -->
+	<target name="resolve" description="retrieve dependencies with ivy">
+		<echo message="Getting dependencies..." />
+		<ivy:retrieve />
+	
+		<ivy:cachepath pathid="compile.path" conf="compile" />
+		<ivy:cachepath pathid="runtime.path" conf="runtime" />
+		<ivy:cachepath pathid="test.path" conf="test" />
+	
+	</target>
+	<!-- Compile Java source from ${src.dir} and output it to ${web.classes.dir} -->
+	<target name="compile" depends="init, resolve" description="compile source code">
+		<mkdir dir="${web.classes.dir}" />
+		<javac destdir="${web.classes.dir}" source="${jdk.version}"
+			target="${jdk.version}" debug="true"
+                        includeantruntime="false" classpathref="compile.path">
+			<src path="${src.dir}" />
+		</javac>
+	</target>
+	<!-- Run jUnit -->
+	<target name="junit" depends="compile">
+
+	  <junit printsummary="yes" haltonfailure="no">
+
+		<classpath refid="test.path" />
+		<classpath location="${web.classes.dir}" />
+
+		<formatter type="xml" />
+		<batchtest fork="yes" todir="${report.dir}">
+			<fileset dir="${test.dir}">
+				<include name="**/*Test*.java" />
+			</fileset>
+		</batchtest>
+
+	  </junit>
+	</target>
 </project>

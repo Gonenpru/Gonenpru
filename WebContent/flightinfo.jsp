@@ -30,18 +30,7 @@ pageEncoding="UTF-8"%>
 </head>
 <body class="">
 	<!-- Pushy Menu -->
-	<nav class="pushy pushy-left">
-		<ul class="list-unstyled">
-			<li><a href="index.jsp#home">Home</a></li>
-			<li><a href="index.jsp#feat">Facilities</a></li>
-			<li><a href="index.jsp#about">About Us</a></li>
-			<li><a href="index.jsp#news">Blog</a></li>
-			<li><a href="#index.jsphistory">History</a></li>
-			<li><a href="index.jsp#photos">Photos</a></li>
-			<li><a href="index.jsp#contact">Contact Us</a></li>
-			<li><a href="login.jsp">Member Access</a></li>
-		</ul>
-	</nav>
+	<jsp:include page="includes/pushy-menu.jsp" />
 
 	<!-- Site Overlay -->
 	<div class="site-overlay"></div>

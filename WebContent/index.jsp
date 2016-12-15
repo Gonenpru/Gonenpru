@@ -1,7 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.io.*,java.util.Locale" %>
+<%@ page import="javax.servlet.*,javax.servlet.http.* "%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html lang="en">
+<fmt:bundle basename="resources.Resources">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,18 +43,7 @@
     </head>
     <body class="">
       <!-- Pushy Menu -->
-      <nav class="pushy pushy-left">
-        <ul class="list-unstyled">
-            <li><a href="index.jsp#home">Home</a></li>
-            <li><a href="index.jsp#feat">Facilities</a></li>
-            <li><a href="index.jsp#about">About Us</a></li>
-            <li><a href="index.jsp#news">Blog</a></li>
-            <li><a href="index.jsp#history">History</a></li>
-            <li><a href="index.jsp#photos">Photos</a></li>
-            <li><a href="index.jsp#contact">Contact Us</a></li>
-            <li><a href="login.jsp">Member Access</a></li>
-        </ul>
-      </nav>
+		<jsp:include page="includes/pushy-menu.jsp" />
 
       <!-- Site Overlay -->
       <div class="site-overlay"></div>
@@ -69,11 +63,11 @@
                         </div>
                     </div>
                     <div class="jumbotron">
-                        <h1><small>Welcome to</small></br>
+                        <h1><small><fmt:message key="home.welcometo"/></small></br>
 						<strong>Gonenpru Airport</strong></h1>
                         <p>
-                        <a href="flightinfo.jsp" class="btn btn-danger btn-lg" role="button">Flight Info</a>
-                        <a href="timetable.jsp" class="btn btn-primary btn-lg" role="button">Timetables</a> 
+                        <a href="flightinfo.jsp" class="btn btn-danger btn-lg" role="button"><fmt:message key="home.flightinfo"/></a>
+                        <a href="timetable.jsp" class="btn btn-primary btn-lg" role="button"><fmt:message key="home.timetable"/></a> 
                         </p>
                         
                     </div>
@@ -85,18 +79,18 @@
                 <div class="row features">
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms">
                         <span class="typcn typcn-plane x3"></span>
-                        <h4>HQ Airlines</h4>
-                        <p>Gonenpru only works with the best Airlines. You'll be flying in High Quality.</p>
+                        <h4><fmt:message key="home.facilities.hqairline"/></h4>
+                        <p><fmt:message key="home.facilities.hqairline.desc"/></p>
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="200ms">
                         <span class="typcn typcn-wi-fi x3"></span>
-                        <h4>Connected</h4>
-                        <p>Gonenpru is a Connected Airport, you'll be able to connect in any point of the Airport.</p>
+                        <h4><fmt:message key="home.facilities.connected"/></h4>
+                        <p><fmt:message key="home.facilities.connected.desc"/></p>
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="300ms">
                         <span class="typcn typcn-globe x3"></span>
-                        <h4>International</h4>
-                        <p>Gonenpru is an International Airport. You can fly wherever you want.</p>
+                        <h4><fmt:message key="home.facilities.international"/></h4>
+                        <p><fmt:message key="home.facilities.international.desc"/></p>
                     </div>
                 </div>
             </div>
@@ -109,19 +103,19 @@
                         <div class="col-md-6 opaline col-md-offset-6">
                             <div class="row">
                                 <div class="col-md-offset-1 col-md-10">
-                                    <h3>About Gonenpru Airport</h3>
-                                    <h5>Best International Airport in the World</h5>
-                                    <p>Passengers of all the world trust us for bussines, vacations and much more due to our service.</p>
+                                    <h3><fmt:message key="home.aboutus.title"/></h3>
+                                    <h5><fmt:message key="home.aboutus.sub"/></h5>
+                                    <p><fmt:message key="home.aboutus.desc"/></p>
                                 </div>
                             </div>
                             <div class="row text-center">
                                 <!-- set the numbers in assets/js/scripts.js  -->
                                 <div class="col-md-4 boxes col-xs-6 col-xs-offset-3 col-lg-4 col-lg-offset-1 col-md-offset-1 col-sm-6 wow fadeInUp">
-                                    <h5>Travelers</h5>
+                                    <h5><fmt:message key="home.aboutus.travelers"/></h5>
                                     <h3 class="odometer 01">00000</h3>
                                 </div>
                                 <div class="col-md-4 boxes col-xs-6 col-xs-offset-3 col-lg-4 col-lg-offset-2 col-md-offset-2 col-sm-6 wow fadeInUp" data-wow-delay="100ms">
-                                    <h5>Flights</h5>
+                                    <h5><fmt:message key="home.aboutus.flights"/></h5>
                                     <h3 class="odometer 02">00000</h3>
                                 </div>
                             </div>
@@ -134,11 +128,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <h2>Spotting at Gonenpru International Airport.</h2>
-                        <p>Gonenpru is one of the world’s busiest international airport, and Europe’s busiest airport. Spotting here can produce some amazing results for your log book, and the variety on show can give you some fantastic photographs.</p>
-                        <p>Gonenpru is also a place you can spot airlines from across the globe, and in recent years has become one of the best places to see a variety of Airbus A380 aircraft, with three carriers operating many daily flights.</p>
-                        <p>If you’re looking for British airlines, Gonenpru is the main hub for British Airways and Virgin Atlantic, so you can expect to see most of their fleets passing through every few days.</p>
-                        <a class="btn btn-danger btn-lg" href="#">Take a Look <i class="fa fa-arrow-circle-o-right"></i> </a>
+                        <h2><fmt:message key="home.blogs.title"/></h2>
+                        <p><fmt:message key="home.blogs.p1"/></p>
+                        <p><fmt:message key="home.blogs.p2"/></p>
+                        <p><fmt:message key="home.blogs.p3"/></p>
+                        <a class="btn btn-danger btn-lg" href="#"><fmt:message key="home.blogs.takealook"/> <i class="fa fa-arrow-circle-o-right"></i> </a>
                     </div>
                     <div class="col-md-5">
                             <img src="images/airlines.jpg" alt="" class="img-responsive">
@@ -154,8 +148,8 @@
                         <div class="col-md-6 opaline">
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1">
-                                    <p class="lead"><i>Where to Spot at Gonenpru.</i></p>
-                                    <p><i>The only official viewing area at Gonenpru is inside Terminal 4, and only for passengers who have passed through security. Spotters instead have to make do with a number of popular locations around the perimeter depending on traffic patterns.</i></p>
+                                    <p class="lead"><i><fmt:message key="home.history.title"/></i></p>
+                                    <p><i><fmt:message key="home.history.desc"/></i></p>
                                     <h6 class="lead">Myrtle Avenue</h6>
                                     <h6 class="lead">Stanwell Moor Road (A3044)</h6>
                                     <h6 class="lead">Aviation Academy</h6>
@@ -212,17 +206,17 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8">
-                            <h3>Contact Us</h3>
+                            <h3><fmt:message key="home.contactus"/></h3>
                            	<p>Info@FlyGonenpru.com</p>
                            	<p>Gonenpru International Airport <br> 8500 Pena Blvd.<br>Denver, CO 80249-6340
  							</p>
  							<br>
- 							<h4>Subscribe To Our Newsletter</h4>
+ 							<h4><fmt:message key="home.contactus.subscribe"/></h4>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Email Here...">
+                                    <input type="text" class="form-control" placeholder="<fmt:message key="home.contactus.email"/>">
                                     <br>
-                                    <button type="button" class="btn btn-danger">Submit Newsletter</button>
+                                    <button type="button" class="btn btn-danger"><fmt:message key="home.contactus.subscribe"/></button>
                                 </div>
                             </div>
                         </div>
@@ -254,5 +248,6 @@
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/scripts.js"></script>
         <script src="assets/js/odometer.js"></script>
+        </fmt:bundle>
     </body>
 </html>

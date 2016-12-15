@@ -39,7 +39,7 @@ DepartureBoard.prototype.spin = function () {
 		(function (i) {
 			window.setTimeout (function () {
 				me._letters[i].spin ();
-			}, 20 * i + Math.random () * 400);
+			}, 20 * i + Math.random ());
 		})(i);
 	}	
 };

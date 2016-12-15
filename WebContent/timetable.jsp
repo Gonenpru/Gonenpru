@@ -90,7 +90,7 @@
 								<td class="text-center">14:10</td>
 								<td class="text-center">KL1725</td>
 								<td class="text-left" style="width:200px">Lisbon</td>
-								<td class="text-center"><div class="estimated">Estimated</div> 14:19</td>
+								<td class="text-center"><div class="estimated">Estimated</div> 14:09</td>
 								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
@@ -101,24 +101,24 @@
 								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
-								<td class="text-center">14:20</td>
-								<td class="text-center">LX780</td>
-								<td class="text-left" style="width:200px">Zurich</td>
-								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
+								<td class="text-center">14:25</td>
+								<td class="text-center">NYC7343</td>
+								<td class="text-left" style="width:200px">New York</td>
+								<td class="text-center"><div class="estimated">Estimated</div> 14:20</td>
 								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
-								<td class="text-center">14:20</td>
-								<td class="text-center">LX780</td>
-								<td class="text-left" style="width:200px">Zurich</td>
-								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
+								<td class="text-center">14:25</td>
+								<td class="text-center">WQA27</td>
+								<td class="text-left" style="width:200px">Los Angeles</td>
+								<td class="text-center"><div class="estimated">Estimated</div> 14:20</td>
 								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
-								<td class="text-center">14:20</td>
-								<td class="text-center">LX780</td>
-								<td class="text-left" style="width:200px">Zurich</td>
-								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
+								<td class="text-center">14:30</td>
+								<td class="text-center">AGT320</td>
+								<td class="text-left" style="width:200px">Aretxabaleta</td>
+								<td class="text-center"><div class="estimated">Estimated</div> 14:25</td>
 								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>

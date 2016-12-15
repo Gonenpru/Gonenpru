@@ -29,16 +29,25 @@ div.table-title {
 .arrived {
 	color: white;
 	background-color: #00ff11;
+	display: inline-block;
+    width: 50%;
+    margin-right: 1em;
 }
 
 .estimated {
 	color: white;
 	background-color:#ffc100;
+	display: inline-block;
+    width: 50%;
+    margin-right: 1em;
 }
 
 .delayed {
 	color: white;
 	background-color:#ff0000;
+	display: inline-block;
+    width: 50%;
+    margin-right: 1em;
 }
 
 .track-button {

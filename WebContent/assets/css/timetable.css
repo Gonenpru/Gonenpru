@@ -1,205 +1,210 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+@import
+	url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 
 body {
-  background-color: #3e94ec;
-  font-family: "Roboto", helvetica, arial, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
+	background-color: #3e94ec;
+	font-family: "Roboto", helvetica, arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
 }
 
 div.table-title {
-   display: block;
-  margin: auto;
-  max-width: 600px;
-  padding:5px;
-  width: 100%;
+	display: block;
+	margin: auto;
+	max-width: 600px;
+	padding: 5px;
+	width: 100%;
 }
 
 .table-title h3 {
-   color: #fafafa;
-   font-size: 30px;
-   font-weight: 400;
-   font-style:normal;
-   font-family: "Roboto", helvetica, arial, sans-serif;
-   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-   text-transform:uppercase;
+	color: #fafafa;
+	font-size: 30px;
+	font-weight: 400;
+	font-style: normal;
+	font-family: "Roboto", helvetica, arial, sans-serif;
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+	text-transform: uppercase;
 }
 
 .arrived {
 	color: white;
 	background-color: #00ff11;
 	display: inline-block;
-    width: 50%;
-    margin-right: 1em;
+	width: 50%;
+	margin-right: 1em;
 }
 
 .estimated {
 	color: white;
-	background-color:#ffc100;
+	background-color: #ffc100;
 	display: inline-block;
-    width: 50%;
-    margin-right: 1em;
+	width: 50%;
+	margin-right: 1em;
 }
 
 .delayed {
 	color: white;
-	background-color:#ff0000;
+	background-color: #ff0000;
 	display: inline-block;
-    width: 50%;
-    margin-right: 1em;
+	width: 50%;
+	margin-right: 1em;
 }
 
 .track-button {
-	-moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #9acc85;
-	box-shadow:inset 0px 1px 0px 0px #9acc85;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a), color-stop(1, #68a54b));
-	background:-moz-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
-	background:-webkit-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
-	background:-o-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
-	background:-ms-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
-	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#74ad5a', endColorstr='#68a54b',GradientType=0);
-	background-color:#74ad5a;
-	border:1px solid #3b6e22;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:13px;
-	font-weight:bold;
-	padding:6px 12px;
-	text-decoration:none;
-}
-.track-button:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #68a54b), color-stop(1, #74ad5a));
-	background:-moz-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
-	background:-webkit-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
-	background:-o-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
-	background:-ms-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
-	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#68a54b', endColorstr='#74ad5a',GradientType=0);
-	background-color:#68a54b;
-}
-.track-button:active {
-	position:relative;
-	top:1px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #9acc85;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #9acc85;
+	box-shadow: inset 0px 1px 0px 0px #9acc85;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a
+		), color-stop(1, #68a54b));
+	background: -moz-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background: -webkit-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background: -o-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background: -ms-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background: linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#74ad5a',
+		endColorstr='#68a54b', GradientType=0);
+	background-color: #74ad5a;
+	border: 1px solid #3b6e22;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 6px 12px;
+	text-decoration: none;
 }
 
+.track-button:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #68a54b
+		), color-stop(1, #74ad5a));
+	background: -moz-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background: -webkit-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background: -o-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background: -ms-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background: linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#68a54b',
+		endColorstr='#74ad5a', GradientType=0);
+	background-color: #68a54b;
+}
+
+.track-button:active {
+	position: relative;
+	top: 1px;
+}
 
 /*** Table Styles **/
-
 .table-fill {
-  background: white;
-  border-radius:3px;
-  border-collapse: collapse;
-  height: 320px;
-  margin: auto;
-  max-width: 100%;
-  padding:5px;
-  width: 100%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  animation: float 5s infinite;
+	background: white;
+	border-radius: 3px;
+	border-collapse: collapse;
+	height: 320px;
+	margin: auto;
+	max-width: 100%;
+	padding: 5px;
+	width: 100%;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	animation: float 5s infinite;
 }
- 
+
 th {
-  color:#D5DDE5;;
-  background:#1b1e24;
-  border-bottom:4px solid #9ea7af;
-  border-right: 1px solid #343a45;
-  font-size:23px;
-  font-weight: 100;
-  padding:24px;
-  text-align:left;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  vertical-align:middle;
+	color: #D5DDE5;;
+	background: #1b1e24;
+	border-bottom: 4px solid #9ea7af;
+	border-right: 1px solid #343a45;
+	font-size: 23px;
+	font-weight: 100;
+	padding: 24px;
+	text-align: left;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	vertical-align: middle;
 }
 
 th:first-child {
-  border-top-left-radius:3px;
+	border-top-left-radius: 3px;
 }
- 
+
 th:last-child {
-  border-top-right-radius:3px;
-  border-right:none;
+	border-top-right-radius: 3px;
+	border-right: none;
 }
-  
+
 tr {
-  border-top: 1px solid #C1C3D1;
-  border-bottom-: 1px solid #C1C3D1;
-  color:#666B85;
-  font-size:16px;
-  font-weight:normal;
-  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+	border-top: 1px solid #C1C3D1;
+	border-bottom-: 1px solid #C1C3D1;
+	color: #666B85;
+	font-size: 16px;
+	font-weight: normal;
+	text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
 }
- 
+
 tr:hover td {
-  background:#4E5066;
-  color:#FFFFFF;
-  border-top: 1px solid #22262e;
-  border-bottom: 1px solid #22262e;
+	background: #4E5066;
+	color: #FFFFFF;
+	border-top: 1px solid #22262e;
+	border-bottom: 1px solid #22262e;
 }
- 
+
 tr:first-child {
-  border-top:none;
+	border-top: none;
 }
 
 tr:last-child {
-  border-bottom:none;
+	border-bottom: none;
 }
- 
+
 tr:nth-child(odd) td {
-  background:#EBEBEB;
+	background: #EBEBEB;
 }
- 
+
 tr:nth-child(odd):hover td {
-  background:#4E5066;
+	background: #4E5066;
 }
 
 tr:last-child td:first-child {
-  border-bottom-left-radius:3px;
+	border-bottom-left-radius: 3px;
 }
- 
+
 tr:last-child td:last-child {
-  border-bottom-right-radius:3px;
+	border-bottom-right-radius: 3px;
 }
- 
+
 td {
-  background:#FFFFFF;
-  padding:20px;
-  text-align:left;
-  vertical-align:middle;
-  font-weight:300;
-  font-size:18px;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-  border-right: 1px solid #C1C3D1;
+	background: #FFFFFF;
+	padding: 20px;
+	text-align: left;
+	vertical-align: middle;
+	font-weight: 300;
+	font-size: 18px;
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+	border-right: 1px solid #C1C3D1;
 }
 
 td:last-child {
-  border-right: 0px;
+	border-right: 0px;
 }
 
 th.text-left {
-  text-align: left;
+	text-align: left;
 }
 
 th.text-center {
-  text-align: center;
+	text-align: center;
 }
 
 th.text-right {
-  text-align: right;
+	text-align: right;
 }
 
 td.text-left {
-  text-align: left;
+	text-align: left;
 }
 
 td.text-center {
-  text-align: center;
+	text-align: center;
 }
 
 td.text-right {
-  text-align: right;
+	text-align: right;
 }

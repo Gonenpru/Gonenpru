@@ -1,7 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
+<%@ page import="java.io.*,java.util.Locale" %>
+<%@ page import="javax.servlet.*,javax.servlet.http.* "%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html lang="en">
+<fmt:bundle basename="resources.Resources">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -66,11 +71,11 @@
 					<table class="table-fill">
 						<thead>
 							<tr>
-								<th class="text-center">Time</th>
-								<th class="text-center">Flight</th>
-								<th class="text-left">Origin</th>
-								<th class="text-center">Status</th>
-								<th class="text-center">Track</th>
+								<th class="text-center"><fmt:message key="timetable.time"/></th>
+								<th class="text-center"><fmt:message key="timetable.flight"/></th>
+								<th class="text-left"><fmt:message key="timetable.origin"/></th>
+								<th class="text-center"><fmt:message key="timetable.status"/></th>
+								<th class="text-center"><fmt:message key="timetable.track"/></th>
 							</tr>
 						</thead>
 						<tbody class="table-hover">
@@ -79,56 +84,56 @@
 								<td class="text-center">TP7453</td>
 								<td class="text-left" style="width:200px">Miami</td>
 								<td class="text-center"><div class="arrived">Arrived</div> 13:32</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')">More Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
 								<td class="text-center">14:10</td>
 								<td class="text-center">KL1725</td>
 								<td class="text-left" style="width:200px">Lisbon</td>
 								<td class="text-center"><div class="estimated">Estimated</div> 14:19</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')">More Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
 								<td class="text-center">14:20</td>
 								<td class="text-center">LX780</td>
 								<td class="text-left" style="width:200px">Zurich</td>
 								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')">More Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
 								<td class="text-center">14:20</td>
 								<td class="text-center">LX780</td>
 								<td class="text-left" style="width:200px">Zurich</td>
 								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')">More Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
 								<td class="text-center">14:20</td>
 								<td class="text-center">LX780</td>
 								<td class="text-left" style="width:200px">Zurich</td>
 								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')">More Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
 								<td class="text-center">14:20</td>
 								<td class="text-center">LX780</td>
 								<td class="text-left" style="width:200px">Zurich</td>
 								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')">More Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
 								<td class="text-center">14:50</td>
 								<td class="text-center">SN3722</td>
 								<td class="text-left" style="width:200px">Madrid</td>
 								<td class="text-center"><div class="estimated">Estimated</div> 14:36</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')">More Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
 								<td class="text-center">14:50</td>
 								<td class="text-center">VY8920</td>
 								<td class="text-left" style="width:200px">Valencia</td>
 								<td class="text-center"><div class="delayed">Delayed</div> 15:22</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')">More Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 						</tbody>
 					</table>
@@ -149,4 +154,5 @@
 	<script src="assets/js/scripts.js"></script>
 	<script src="assets/js/odometer.js"></script>
 </body>
+</fmt:bundle>
 </html>

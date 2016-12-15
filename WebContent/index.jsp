@@ -54,7 +54,6 @@
 	<!-- Site Overlay -->
 	<div class="site-overlay"></div>
 
-<<<<<<< HEAD
 	<header id="home">
 		<div class="container-fluid">
 			<!-- change the image in style.css to the class header .container-fluid [approximately row 50] -->
@@ -76,10 +75,9 @@
 						<small>Welcome to</small></br> <strong>Gonenpru Airport</strong>
 					</h1>
 					<p>
-						<a class="btn btn-primary btn-lg" role="button">Login</a> <a
-							target="_blank"
-							href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/"
-							class="btn btn-lg btn-danger" role="button">Register</a>
+						<a class="btn btn-primary btn-lg" href="flightinfo.jsp" role="button">Flights</a> 
+						<a	href="timetable.jsp"
+							class="btn btn-lg btn-danger" role="button">Timetables</a>
 					</p>
 
 				</div>

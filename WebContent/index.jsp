@@ -78,17 +78,17 @@
             <div class="container">
                 <div class="row features">
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms">
-                        <span class="typcn typcn-plane x3"></span>
+                        <i class="fa fa-diamond fa-3x" aria-hidden="true"></i>
                         <h4><fmt:message key="home.facilities.hqairline"/></h4>
                         <p><fmt:message key="home.facilities.hqairline.desc"/></p>
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="200ms">
-                        <span class="typcn typcn-wi-fi x3"></span>
+                        <i class="fa fa-wifi fa-3x" aria-hidden="true"></i>
                         <h4><fmt:message key="home.facilities.connected"/></h4>
                         <p><fmt:message key="home.facilities.connected.desc"/></p>
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="300ms">
-                        <span class="typcn typcn-globe x3"></span>
+                        <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
                         <h4><fmt:message key="home.facilities.international"/></h4>
                         <p><fmt:message key="home.facilities.international.desc"/></p>
                     </div>

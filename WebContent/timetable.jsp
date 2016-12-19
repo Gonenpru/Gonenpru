@@ -30,7 +30,7 @@
 	href='https://fonts.googleapis.com/css?family=Raleway:300,700,900,500'
 	rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="assets/css/typicons.min.css">
-<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.css">
 <link rel="stylesheet" href="assets/css/pushy.css">
 <link rel="stylesheet" href="assets/css/masonry.css">
 <link rel="stylesheet" href="assets/css/animate.css">

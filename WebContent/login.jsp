@@ -43,8 +43,13 @@ pageEncoding="ISO-8859-1"%>
             </form>
             <form class="login-form">
                 <input type="text" placeholder="Email"/>
-                <input type="password" placeholder="Password"/>
-                <button>login</button>
+                <input type="password" placeholder="Password"/> 
+                <p>User Type: <select>
+					<option value="controller">Controller</option>
+					<option value="airline">Airline</option>
+					<option value="airport">Airport</option>
+				</select></p>
+				<button>login</button>
                 <p class="message">Not registered? <a href="#">Create an account</a></p>
             </form>
         </div>

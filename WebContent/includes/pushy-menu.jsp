@@ -1,11 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.io.*,java.util.Locale" %>
-<%@ page import="javax.servlet.*,javax.servlet.http.* "%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 
-<fmt:bundle basename="resources.Resources">
 <nav class="pushy pushy-left">
 	<ul class="list-unstyled">
 		<li><a href="index.jsp#home">Home</a></li>
@@ -20,4 +16,3 @@
 		<li><a href="login.jsp">Member Access</a></li>
 	</ul>
 </nav>
-</fmt:bundle>

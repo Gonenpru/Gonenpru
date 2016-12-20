@@ -1,12 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.io.*,java.util.Locale" %>
-<%@ page import="javax.servlet.*,javax.servlet.http.* "%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+    <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html lang="en">
-<fmt:bundle basename="resources.Resources">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -140,8 +136,7 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script
-		src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap-scrollspy.js"></script>
+	<script src="assets/js/bootstrap-scrollspy.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 	<script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
@@ -152,5 +147,4 @@
 	<script src="assets/js/scripts.js"></script>
 	<script src="assets/js/odometer.js"></script>
 </body>
-</fmt:bundle>
 </html>

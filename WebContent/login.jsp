@@ -39,6 +39,11 @@ pageEncoding="ISO-8859-1"%>
                 <input type="text" placeholder="Name"/>
                 <input type="password" placeholder="Password"/>
                 <input type="text" placeholder="Email"/>
+                <p>User Type: <select>
+					<option value="controller">Controller</option>
+					<option value="airline">Airline</option>
+					<option value="airport">Airport</option>
+				</select></p>
                 <button>create</button>
                 <p class="message">Already registered? <a href="#">Sign In</a></p>
             </form>
@@ -53,6 +58,7 @@ pageEncoding="ISO-8859-1"%>
 				<button>login</button>
                 <p class="message">Not registered? <a href="#">Create an account</a></p>
             </form>
+            <!-- Different Action url for each user type -->
         </div>
     </div>
 	<script src="assets/js/jquery.min.js"></script>

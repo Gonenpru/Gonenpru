@@ -5,7 +5,7 @@ public class Prueba {
 	public static void main (String args[]){
 		Prueba a = new Prueba();
 		System.out.println(a.reverseHW(true));
-		System.out.println(a.reverseHW(false));
+		System.out.println(a.reverseHW(false)); 
 	}
 	
 	public String reverseHW (boolean reverse){

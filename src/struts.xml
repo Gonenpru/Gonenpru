@@ -11,4 +11,10 @@
 	<constant name="struts.patternMatcher" value="regex" />
 	<constant name="struts.custom.i18n.resources" value="global" />
 
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="locale" class="struts2.LocaleAction">
+			<result name="SUCCESS">index.jsp</result>
+		</action>
+	</package>
+
 </struts>

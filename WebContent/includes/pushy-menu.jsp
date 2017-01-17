@@ -1,23 +1,48 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.io.*,java.util.Locale" %>
-<%@ page import="javax.servlet.*,javax.servlet.http.* "%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
-
-<fmt:bundle basename="resources.Resources">
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<s:url id="localeEN" namespace="/" action="locale" >
+   <s:param name="request_locale" >en</s:param>
+</s:url>
+<s:url id="localeES" namespace="/" action="locale" >
+   <s:param name="request_locale" >es</s:param>
+</s:url>
+<s:url id="localeEU" namespace="/" action="locale" >
+   <s:param name="request_locale" >eu</s:param>
+</s:url>
+<s:i18n name="resources">
 <nav class="pushy pushy-left">
 	<ul class="list-unstyled">
-		<li><a href="index.jsp#home">Home</a></li>
-		<li><a href="flightinfo.jsp"><fmt:message key="home.flightinfo"/></a></li>
-		<li><a href="timetable.jsp"><fmt:message key="home.timetable"/></a></li>
-		<li><a href="index.jsp#feat"><fmt:message key="home.facilities"/></a></li>
-		<li><a href="index.jsp#about"><fmt:message key="home.aboutus"/></a></li>
-		<li><a href="index.jsp#news"><fmt:message key="home.blogs"/></a></li>
-		<li><a href="index.jsp#history"><fmt:message key="home.history"/></a></li>
-		<li><a href="index.jsp#photos"><fmt:message key="home.photos"/></a></li>
-		<li><a href="index.jsp#contact"><fmt:message key="home.contactus"/></a></li>
-		<li><a href="login.jsp">Member Access</a></li>
+		<li><a href="index.jsp#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+		<li><a href="flightinfo.jsp"><i class="fa fa-plane" aria-hidden="true"></i> <s:property value="getText('home.flightinfo')"/></a></li>
+		<li><a href="timetable.jsp"><i class="fa fa-table" aria-hidden="true"></i> <s:property value="getText('home.timetable')"/></a></li>
+		<li><a href="index.jsp#feat"><i class="fa fa-refresh" aria-hidden="true"></i> <s:property value="getText('home.facilities')"/></a></li>
+		<li><a href="index.jsp#about"><i class="fa fa-info-circle" aria-hidden="true"></i> <s:property value="getText('home.aboutus')"/></a></li>
+		<li><a href="index.jsp#news"><i class="fa fa-rss" aria-hidden="true"></i> <s:property value="getText('home.blogs')"/></a></li>
+		<li><a href="index.jsp#history"><i class="fa fa-history" aria-hidden="true"></i> <s:property value="getText('home.history')"/></a></li>
+		<li><a href="index.jsp#photos"><i class="fa fa-picture-o" aria-hidden="true"></i> <s:property value="getText('home.photos')"/></a></li>
+		<li><a href="index.jsp#contact"><i class="fa fa-envelope" aria-hidden="true"></i> <s:property value="getText('home.contactus')"/></a></li>
+		<li><a href="login.jsp"><i class="fa fa-user" aria-hidden="true"></i> Member Access</a></li>
+		<li>
+		<div style="text-align: center;">
+		<s:a href="%{localeEN}" ><img src="images/en_flag.png" alt="English" style="width: 40px; height: 27px; cursor: pointer;"></s:a>
+		<s:a href="%{localeES}" ><img src="images/es_flag.png" alt="Spanish" style="width: 40px; height: 27px; cursor: pointer;"></s:a>
+		<s:a href="%{localeEU}" ><img src="images/eu_flag.png" alt="Basque" style="width: 40px; height: 27px; cursor: pointer;"></s:a>
+		</div>
+		</li>
 	</ul>
-</nav>
-</fmt:bundle>
+	<hr>
+		<p style="text-align: center;">
+		<img
+				style="border: 0; width: 88px; height: 31px"
+				src="https://www.w3.org/Icons/valid-html401-blue"
+				alt="¡HTML Válido!" />
+			<img
+				style="border: 0; width: 88px; height: 31px"
+				src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+				alt="¡CSS Válido!" />
+				
+			
+		</p>
+	</nav>
+</s:i18n>

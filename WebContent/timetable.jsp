@@ -1,12 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.io.*,java.util.Locale" %>
-<%@ page import="javax.servlet.*,javax.servlet.http.* "%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+    <%@ taglib prefix="s" uri="/struts-tags"%>
+    <%@taglib uri="/struts-dojo-tags" prefix="sd" %>
 <!DOCTYPE html>
+<s:i18n name="resources">
 <html lang="en">
-<fmt:bundle basename="resources.Resources">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,19 +27,16 @@
 <link
 	href='https://fonts.googleapis.com/css?family=Raleway:300,700,900,500'
 	rel='stylesheet' type='text/css'>
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css">
-<link rel="stylesheet"
-	href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/typicons.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.css">
 <link rel="stylesheet" href="assets/css/pushy.css">
 <link rel="stylesheet" href="assets/css/masonry.css">
 <link rel="stylesheet" href="assets/css/animate.css">
 <link rel="stylesheet" href="assets/css/magnific-popup.css">
 <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
 <link rel="stylesheet" href="assets/css/timetable.css" />
-<script src="assets/js/timetable.js"></script>
 </head>
-<body style="">
+<body>
 	<!-- Pushy Menu -->
 	<jsp:include page="includes/pushy-menu.jsp" />
 
@@ -67,15 +62,39 @@
 			</div>
 		
 	</header>
-				
-					<table class="table-fill">
+				<h1 style="text-align: center;">Departures</h1>
+					<table class="table-fill" id="departures">
 						<thead>
 							<tr>
-								<th class="text-center"><fmt:message key="timetable.time"/></th>
-								<th class="text-center"><fmt:message key="timetable.flight"/></th>
-								<th class="text-left"><fmt:message key="timetable.origin"/></th>
-								<th class="text-center"><fmt:message key="timetable.status"/></th>
-								<th class="text-center"><fmt:message key="timetable.track"/></th>
+								<th class="text-center"><s:property value="getText('timetable.time')"/></th>
+								<th class="text-center"><s:property value="getText('timetable.flight')"/></th>
+								<th class="text-left"><s:property value="getText('timetable.origin')"/></th>
+								<th class="text-center"><s:property value="getText('timetable.status')"/></th>
+								<th class="text-center"><s:property value="getText('timetable.track')"/></th>
+							</tr>
+						</thead>
+						<tbody class="table-hover">
+							<s:iterator value="flightsList">
+								<tr>
+									<td><s:property value="id" /></td>
+									<td><s:property value="id" /></td>
+									<td><s:property value="route_id" /></td>
+									<td><s:property value="delay" /></td>
+									<td><s:property value="dateDeparture" /></td>
+								</tr>
+							</s:iterator>
+						</tbody>
+					</table>
+					<br>
+					<h1 style="text-align: center;">Arrivals</h1>
+					<table class="table-fill" id="arrivals">
+						<thead>
+							<tr>
+								<th class="text-center"><s:property value="getText('timetable.time')"/></th>
+								<th class="text-center"><s:property value="getText('timetable.flight')"/></th>
+								<th class="text-left"><s:property value="getText('timetable.dest')"/></th>
+								<th class="text-center"><s:property value="getText('timetable.status')"/></th>
+								<th class="text-center"><s:property value="getText('timetable.track')"/></th>
 							</tr>
 						</thead>
 						<tbody class="table-hover">
@@ -84,56 +103,56 @@
 								<td class="text-center">TP7453</td>
 								<td class="text-left" style="width:200px">Miami</td>
 								<td class="text-center"><div class="arrived">Arrived</div> 13:32</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><s:property value="getText('timetable.moreinfo')"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
 								<td class="text-center">14:10</td>
 								<td class="text-center">KL1725</td>
 								<td class="text-left" style="width:200px">Lisbon</td>
-								<td class="text-center"><div class="estimated">Estimated</div> 14:19</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><div class="estimated">Estimated</div> 14:09</td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><s:property value="getText('timetable.moreinfo')"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
 								<td class="text-center">14:20</td>
 								<td class="text-center">LX780</td>
 								<td class="text-left" style="width:200px">Zurich</td>
 								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><s:property value="getText('timetable.moreinfo')"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
-								<td class="text-center">14:20</td>
-								<td class="text-center">LX780</td>
-								<td class="text-left" style="width:200px">Zurich</td>
-								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center">14:25</td>
+								<td class="text-center">NYC7343</td>
+								<td class="text-left" style="width:200px">New York</td>
+								<td class="text-center"><div class="estimated">Estimated</div> 14:20</td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><s:property value="getText('timetable.moreinfo')"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
-								<td class="text-center">14:20</td>
-								<td class="text-center">LX780</td>
-								<td class="text-left" style="width:200px">Zurich</td>
-								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center">14:25</td>
+								<td class="text-center">WQA27</td>
+								<td class="text-left" style="width:200px">Los Angeles</td>
+								<td class="text-center"><div class="estimated">Estimated</div> 14:20</td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><s:property value="getText('timetable.moreinfo')"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
-								<td class="text-center">14:20</td>
-								<td class="text-center">LX780</td>
-								<td class="text-left" style="width:200px">Zurich</td>
-								<td class="text-center"><div class="estimated">Estimated</div> 14:11</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center">14:30</td>
+								<td class="text-center">AGT320</td>
+								<td class="text-left" style="width:200px">Aretxabaleta</td>
+								<td class="text-center"><div class="estimated">Estimated</div> 14:25</td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><s:property value="getText('timetable.moreinfo')"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
 								<td class="text-center">14:50</td>
 								<td class="text-center">SN3722</td>
 								<td class="text-left" style="width:200px">Madrid</td>
 								<td class="text-center"><div class="estimated">Estimated</div> 14:36</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><s:property value="getText('timetable.moreinfo')"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 							<tr>
 								<td class="text-center">14:50</td>
 								<td class="text-center">VY8920</td>
 								<td class="text-left" style="width:200px">Valencia</td>
 								<td class="text-center"><div class="delayed">Delayed</div> 15:22</td>
-								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><fmt:message key="timetable.moreinfo"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
+								<td class="text-center"><button class="track-button" type="button" onclick="alert('Fligth Info - Coming Soon')"><s:property value="getText('timetable.moreinfo')"/> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></td>
 							</tr>
 						</tbody>
 					</table>
@@ -142,8 +161,7 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script
-		src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap-scrollspy.js"></script>
+	<script src="assets/js/bootstrap-scrollspy.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 	<script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
@@ -154,5 +172,5 @@
 	<script src="assets/js/scripts.js"></script>
 	<script src="assets/js/odometer.js"></script>
 </body>
-</fmt:bundle>
 </html>
+</s:i18n>

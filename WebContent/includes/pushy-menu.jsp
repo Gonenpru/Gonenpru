@@ -25,18 +25,24 @@
 		<li><a href="login.jsp"><i class="fa fa-user" aria-hidden="true"></i> Member Access</a></li>
 		<li>
 		<div style="text-align: center;">
-		<s:a href="%{localeEN}" ><img src="images/en_flag.png" style="width: 40px; height: 27px; cursor: pointer;"></s:a>
-		<s:a href="%{localeES}" ><img src="images/es_flag.png" style="width: 40px; height: 27px; cursor: pointer;"></s:a>
-		<s:a href="%{localeEU}" ><img src="images/eu_flag.png" style="width: 40px; height: 27px; cursor: pointer;"></s:a>
+		<s:a href="%{localeEN}" ><img src="images/en_flag.png" alt="English" style="width: 40px; height: 27px; cursor: pointer;"></s:a>
+		<s:a href="%{localeES}" ><img src="images/es_flag.png" alt="Spanish" style="width: 40px; height: 27px; cursor: pointer;"></s:a>
+		<s:a href="%{localeEU}" ><img src="images/eu_flag.png" alt="Basque" style="width: 40px; height: 27px; cursor: pointer;"></s:a>
 		</div>
 		</li>
 	</ul>
-		<p>
-			<a href="http://jigsaw.w3.org/css-validator/check/referer"> <img
+	<hr>
+		<p style="text-align: center;">
+		<img
+				style="border: 0; width: 88px; height: 31px"
+				src="https://www.w3.org/Icons/valid-html401-blue"
+				alt="¡HTML Válido!" />
+			<img
 				style="border: 0; width: 88px; height: 31px"
 				src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
 				alt="¡CSS Válido!" />
-			</a>
+				
+			
 		</p>
 	</nav>
 </s:i18n>

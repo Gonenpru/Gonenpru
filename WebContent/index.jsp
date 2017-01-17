@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="jumbotron">
-                        <h1><small><s:property value="getText('home.welcometo')"/></small></br>
+                        <h1><small><s:property value="getText('home.welcometo')"/></small><br>
 						<strong>Gonenpru Airport</strong></h1>
                         <p>
                         <a href="flightinfo.jsp" class="btn btn-danger btn-lg" role="button"><s:property value="getText('home.flightinfo')"/></a>

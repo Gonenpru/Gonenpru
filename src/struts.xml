@@ -11,8 +11,27 @@
 	<constant name="struts.patternMatcher" value="regex" />
 	<constant name="struts.custom.i18n.resources" value="global" />
 
-	<package name="default" namespace="/" extends="struts-default">
+	<package name="struts2" namespace="/" extends="struts-default">
 		<action name="locale" class="struts2.LocaleAction">
+			<result name="SUCCESS">index.jsp</result>
+		</action>
+
+		<action name="register" class="struts2.Login">
+			<result name="SUCCESS">login.jsp</result>
+		</action>
+
+		<action name="login" class="struts2.Login">
+			<result name="CONTROLLER">controllerindex.jsp</result>
+			<result name="AIRLINE">airlineindex.jsp</result>
+			<result name="AIRPORT">airportindex.jsp</result>
+		</action>
+		
+		<action name="list_flight" class="struts2.FlightsAction" method="list">
+			<result name="success">timetable.jsp</result>
+		</action>
+
+
+		<action name="hello" class="struts2.Gonenpru" method="execute">
 			<result name="SUCCESS">index.jsp</result>
 		</action>
 	</package>

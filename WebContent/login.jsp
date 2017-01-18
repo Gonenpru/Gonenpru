@@ -59,16 +59,16 @@
 				</p>
 			</form>
 
-			<form id="login" class="login-form" action="../Controller/login.jsp" method="post">
-				<s:textfield id="input" type="text" placeholder="Email" />
-				<s:textfield id="input" type="password" placeholder="Password" />
+			<form id="login_form" name="login_form" class="login-form" action="../Controller/login.action" method="post">
+				<s:textfield id="input" type="text" name="email" placeholder="Email" />
+				<s:textfield id="input" type="password" name="password" placeholder="Password" />
 				<p>
 					User Type: <select id="login_select" onchange="changeLoginAction()">
 						<option value="controller">Controller</option>
 						<option value="airline">Airline</option>
 					</select>
 				</p>
-				<button>login</button>
+				<input type="submit" value="Login"/>
 				<p class="message">
 					Not registered? <a href="#">Create an account</a>
 				</p>
@@ -77,18 +77,20 @@
 			<script type="text/javascript">
 			
 				function changeLoginAction(){
-					var login = document.getElementById("login");
+					var login = document.getElementById("login_form");
 					var log_select = document.getElementById("login_select");
 					var log_op = log_select.options[log_select.selectedIndex].value;
+					console.log("Opcion: "+log_op);
 					switch (log_op) {
-					case 0:
-						login.action = "../Controller/login.jsp";
+					case "controller":
+						document.login_form.action = "../Controller/login.action";
 						break;
-					case 1:
-						login.action = "../Airline/login.jsp";
+					case "airline":
+						document.login_form.action = "../Airline/login.action";
 						break;
 
 					default:
+						console.log("NADA");
 						break;
 					}
 					
@@ -100,10 +102,10 @@
 					var reg_op = reg_select.options[reg_select.selectedIndex].value;
 					switch (reg_op) {
 					case 0:
-						login.action = "../Controller/register.jsp";
+						document.login.action = "../Controller/register.jsp";
 						break;
 					case 1:
-						login.action = "../Airline/register.jsp";
+						document.login.action = "../Airline/register.jsp";
 						break;
 
 					default:

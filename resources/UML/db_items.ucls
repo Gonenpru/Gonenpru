@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.13" icons="true" automaticImage="PNG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
+  router="FAN">  
+  <class id="1" language="java" name="db_items.Gates" project="Gonenpru" file="/Gonenpru/src/db_items/Gates.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="293" width="139" x="83" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="db_items.Airlines" project="Gonenpru" file="/Gonenpru/src/db_items/Airlines.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="347" width="173" x="262" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="db_items.Flights" project="Gonenpru" file="/Gonenpru/src/db_items/Flights.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="671" width="252" x="475" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="db_items.Planes" project="Gonenpru" file="/Gonenpru/src/db_items/Planes.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="329" width="153" x="767" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="db_items.Employees" project="Gonenpru" 
+    file="/Gonenpru/src/db_items/Employees.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="401" width="223" x="960" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="db_items.PlaneStatus" project="Gonenpru" 
+    file="/Gonenpru/src/db_items/PlaneStatus.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="239" width="134" x="1223" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="db_items.Tickets" project="Gonenpru" file="/Gonenpru/src/db_items/Tickets.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="329" width="150" x="1397" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="db_items.Passengers" project="Gonenpru" 
+    file="/Gonenpru/src/db_items/Passengers.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="401" width="228" x="1587" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="db_items.Routes" project="Gonenpru" file="/Gonenpru/src/db_items/Routes.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="437" width="218" x="1855" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="db_items.Controllers" project="Gonenpru" 
+    file="/Gonenpru/src/db_items/Controllers.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="401" width="222" x="2113" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="db_items.PlaneModels" project="Gonenpru" 
+    file="/Gonenpru/src/db_items/PlaneModels.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="347" width="189" x="2375" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="db_items.Terminals" project="Gonenpru" 
+    file="/Gonenpru/src/db_items/Terminals.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="239" width="134" x="2604" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="db_items.Baggages" project="Gonenpru" file="/Gonenpru/src/db_items/Baggages.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="293" width="139" x="2778" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="db_items.Manufacturers" project="Gonenpru" 
+    file="/Gonenpru/src/db_items/Manufacturers.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="239" width="147" x="2957" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="db_items.PlaneMovements" project="Gonenpru" 
+    file="/Gonenpru/src/db_items/PlaneMovements.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="347" width="217" x="3144" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
